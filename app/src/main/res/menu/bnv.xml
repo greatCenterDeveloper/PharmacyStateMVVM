@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bnv_weekday"
+        android:title="평일"
+        android:icon="@drawable/ic_weekday"/>
+
+    <item android:id="@+id/bnv_weekend"
+        android:title="주말"
+        android:icon="@drawable/ic_weekend"/>
+
+    <item android:id="@+id/bnv_holiday"
+        android:title="공휴일"
+        android:icon="@drawable/ic_holiday"/>
+</menu>
