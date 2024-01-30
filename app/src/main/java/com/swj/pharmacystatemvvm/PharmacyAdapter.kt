@@ -23,7 +23,7 @@ class PharmacyAdapter(var context: Context, var items: ArrayList<PharmacyItem>) 
         holder.tvNum.tag = item
         holder.tvPharmacyName.text = item.name
         holder.tvPharmacyAddress.text = item.roadAddr
-        if (item.roadAddr == null) holder.tvPharmacyAddress.text = item.lotNoAddr
+        if (item.roadAddr == "") holder.tvPharmacyAddress.text = item.lotNoAddr
         holder.tvPharmacyBusinessDay.text = item.businessDay
     }
 
