@@ -31,30 +31,30 @@ class PharmacyItem : Serializable {
 
     constructor()
     constructor(item: PharmacyItem) {
-        num = item.num
-        sigungu = item.sigungu
-        name = item.name
-        tel = item.tel
-        mondayOpen = item.mondayOpen
-        mondayEnd = item.mondayEnd
-        tuesdayOpen = item.tuesdayOpen
-        tuesdayEnd = item.tuesdayEnd
-        wednesdayOpen = item.wednesdayOpen
-        wednesdayEnd = item.wednesdayEnd
-        thursdayOpen = item.thursdayOpen
-        thursdayEnd = item.thursdayEnd
-        fridayOpen = item.fridayOpen
-        fridayEnd = item.fridayEnd
-        saturdayOpen = item.saturdayOpen
-        saturdayEnd = item.saturdayEnd
-        sundayOpen = item.sundayOpen
-        sundayEnd = item.sundayEnd
-        holidayOpen = item.holidayOpen
-        holidayEnd = item.holidayEnd
-        lotNoAddr = item.lotNoAddr
-        roadAddr = item.roadAddr
-        businessDay = item.businessDay
-        gpsLatitude = item.gpsLatitude
-        gpsLongitude = item.gpsLongitude
+        num             = item.num
+        sigungu         = item.sigungu
+        name            = item.name
+        tel             = item.tel
+        mondayOpen      = item.mondayOpen
+        mondayEnd       = item.mondayEnd
+        tuesdayOpen     = item.tuesdayOpen
+        tuesdayEnd      = item.tuesdayEnd
+        wednesdayOpen   = item.wednesdayOpen
+        wednesdayEnd    = item.wednesdayEnd
+        thursdayOpen    = item.thursdayOpen
+        thursdayEnd     = item.thursdayEnd
+        fridayOpen      = item.fridayOpen
+        fridayEnd       = item.fridayEnd
+        saturdayOpen    = item.saturdayOpen
+        saturdayEnd     = item.saturdayEnd
+        sundayOpen      = item.sundayOpen
+        sundayEnd       = item.sundayEnd
+        holidayOpen     = item.holidayOpen
+        holidayEnd      = item.holidayEnd
+        lotNoAddr       = item.lotNoAddr
+        roadAddr        = item.roadAddr
+        businessDay     = item.businessDay
+        gpsLatitude     = item.gpsLatitude
+        gpsLongitude    = item.gpsLongitude
     }
 }
