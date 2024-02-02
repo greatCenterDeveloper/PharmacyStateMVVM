@@ -6,17 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.swj.pharmacystatemvvm.databinding.FragmentHolidayBinding
 
 class HolidayFragment : Fragment() {
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_holiday, container, false)
-    }
+
+    lateinit var binding: FragmentHolidayBinding
 
     var items = ArrayList<PharmacyItem>()
     var currentItems = ArrayList<PharmacyItem>()
@@ -26,6 +23,17 @@ class HolidayFragment : Fragment() {
     var recyclerView: RecyclerView? = null
     var adapter: PharmacyAdapter? = null
     var currentPage = 1
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_holiday, container, false)
+
+        return binding.root
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recyclerView = view.findViewById(R.id.recyclerview_holiday)
