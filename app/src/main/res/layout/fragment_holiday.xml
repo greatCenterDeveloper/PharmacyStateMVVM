@@ -3,7 +3,7 @@
     <data>
         <variable
             name="vm"
-            type="com.swj.pharmacystatemvvm.FragmentViewModel" />
+            type="com.swj.pharmacystatemvvm.MainViewModel" />
     </data>
     
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -41,14 +41,15 @@
                 android:layout_gravity="center"/>
         </LinearLayout>
 
+        <!--android:id="@+id/recyclerview_holiday"-->
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview_holiday"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="16dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:orientation="vertical"/>
+            android:orientation="vertical"
+            app:itemList="@{vm.holidayItems}"/>
 
         <LinearLayout
             android:layout_width="match_parent"
